@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper Resume | Home</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/index.css">
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Grid CSS -->
+    <link rel="stylesheet" href="https://cdn.tailgrids.com/tailgrids-fallback.css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/logo/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Hero -->
+    <section id="top">
+        <!-- Nav -->
+        <nav class="w-full border-b">
+            <div class="py-5 md:py-0 container mx-auto px-6 flex items-center justify-between">
+                <div aria-label="Logo" role="img">
+                    <img class="w-15 h-20 md:w-auto" src="assets/img/logo/logo.png" alt="logo" />
+                    <p> Paper Resume</p>
+                </div>
+                <div>
+                    <button onclick="toggleMenu(true)"
+                        class="sm:block md:hidden text-gray-500 hover:text-gray-700 focus:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500">
+                        <svg aria-haspopup="true" aria-label="open Main Menu" xmlns="http://www.w3.org/2000/svg"
+                            class="md:hidden icon icon-tabler icon-tabler-menu" width="24" height="24"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round">
+                            <path stroke="none" d="M0 0h24v24H0z"></path>
+                            <line x1="4" y1="8" x2="20" y2="8"></line>
+                            <line x1="4" y1="16" x2="20" y2="16"></line>
+                        </svg>
+                    </button>
+                    <div id="menu" class="md:block lg:block hidden">
+                        <button onclick="toggleMenu(false)"
+                            class="block md:hidden lg:hidden text-gray-500 hover:text-gray-700 focus:text-gray-700 fixed focus:outline-none focus:ring-2 focus:ring-gray-500 z-30 top-0 mt-6">
+                            <svg aria-label="close main menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" />
+                                <line x1="18" y1="6" x2="6" y2="18" />
+                                <line x1="6" y1="6" x2="18" y2="18" />
+                            </svg>
+                        </button>
+                        <ul
+                            class="flex text-3xl md:text-base items-center py-10 md:flex flex-col md:flex-row justify-center fixed md:relative top-0 bottom-0 left-0 right-0 bg-white md:bg-transparent z-20">
+                            <li
+                                class="text-gray-700 hover:text-gray-900 cursor-pointer text-base lg:text-lg pt-10 md:pt-0">
+                                <a href="#hero">Home</a>
+                            </li>
+                            <li
+                                class="text-gray-700 hover:text-gray-900 cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
+                                <a href="#features">Features</a>
+                            </li>
+                            <li
+                                class="text-gray-700 hover:text-gray-900 cursor-pointer text-base lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
+                                <a href="#testimonials">Testimonials</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- hero -->
+        <div class="bg-gray-100" id="hero">
+            <div class="container mx-auto flex flex-col items-center py-12 sm:py-24">
+                <div class="w-11/12 sm:w-2/3 lg:flex justify-center items-center flex-col  mb-5 sm:mb-10">
+                    <h1
+                        class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-gray-800 font-black leading-7 md:leading-10">
+                        The Freedom to Create the
+                        <span class="text-blue-600">Resume</span>
+                        You Want
+                    </h1>
+                    <p class="mt-5 sm:mt-10 lg:w-10/12 text-gray-400 font-normal text-center text-sm sm:text-lg">
+                        Create a beautiful resume to impress and engage opportunity and land your dream job!
+                    </p>
+                </div>
+                <div class="flex justify-center items-center">
+                    <button onclick="window.location.href='form.php'"
+                        class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 bg-blue-600 transition duration-150 ease-in-out hover:bg-blue-800 lg:text-xl lg:font-bold  rounded text-white px-4 sm:px-10 border border-blue-600 py-2 sm:py-4 text-sm">Get
+                        Started</button>
+                    <button onclick="window.location.href='#features'"
+                        class="ml-4 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600 bg-transparent transition duration-150 ease-in-out hover:border-blue-600 lg:text-xl lg:font-bold  hover:text-blue-600 rounded border border-blue-600 text-blue-600 px-4 sm:px-10 py-2 sm:py-4 text-sm">
+                        Explore
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features  -->
+    <section class="pt-20 lg:pt-[120px] pb-12 lg:pb-[90px]" id="features">
+        <div class="container">
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full px-4">
+                    <div class="text-center mx-auto mb-12 lg:mb-20 max-w-[510px]">
+                        <span class="font-semibold text-lg text-primary mb-2 block">
+                            Our Services
+                        </span>
+                        <h2 class="
+                       font-bold
+                       text-3xl
+                       sm:text-4xl
+                       md:text-[40px]
+                       text-dark
+                       mb-4
+                       ">
+                            What We Offer
+                        </h2>
+                        <p class="text-base text-body-color">
+                            Build your brand-new resume in as little as 5 minutes. Resume Templates for Every Career
+                            Path.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap -mx-4">
+
+                <div class="w-full md:w-1/2 lg:w-1/3 px-4">
+                    <div class="
+                    p-10
+                    md:px-7
+                    xl:px-10
+                    rounded-[20px]
+                    bg-white
+                    shadow-md
+                    hover:shadow-lg
+                    mb-8
+                    ">
+                        <h4 class="font-semibold text-xl text-dark mb-3">
+                           <center> Fast and Easy to Use</center>
+                        </h4>
+                        <p class="text-body-color">
+                            Our free resume builder lets you easily and quickly create a resume using our resume wizard.
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/3 px-4">
+                    <div class="
+                    p-10
+                    md:px-7
+                    xl:px-10
+                    rounded-[20px]
+                    bg-white
+                    shadow-md
+                    hover:shadow-lg
+                    mb-8
+                    ">
+                        <h4 class="font-semibold text-xl text-dark mb-3">
+                            <center>No Hidden Fees</center>
+                        </h4>
+                        <p class="text-body-color">
+                            you won't spend hours working on your resume, just to be hit with a hidden paywall. Our
+                            resume builder will notify you if you're using any of our premium features in advance.
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/3 px-4">
+                    <div class="
+                    p-10
+                    md:px-7
+                    xl:px-10
+                    rounded-[20px]
+                    bg-white
+                    shadow-md
+                    hover:shadow-lg
+                    mb-8
+                    ">
+                        <h4 class="font-semibold text-xl text-dark mb-3">
+                            <center>Download your resume as PDF</center>
+                        </h4>
+                        <p class="text-body-color">
+                            Download your resume and send it straight to the hiring manager. Whatever format you choose,
+                            we've got you covered.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial  -->
+    <section class="text-gray-600 body-font" id="testimonials">
+        <div class="w-full bg-white px-5 py-16 md:py-24 text-gray-800 bg-gray-100">
+            <div class="w-full max-w-6xl mx-auto">
+                <div class="text-center max-w-xl mx-auto">
+                    <h1 class="text-6xl md:text-5xl font-bold mb-5 text-gray-600">What people say about us.</h1>
+                    <div class="text-center mb-10">
+                        <span class="inline-block w-40 h-1 rounded-full bg-blue-500"></span>
+                    </div>
+                </div>
+                <div class="-mx-3 md:flex items-start">
+                    <div class="px-3 md:w-1/3">
+                        <div
+                            class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                            <div class="w-full flex mb-4 items-center">
+                                <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                                    <img src="assets/img/testimonial/N301.jpg" alt="">
+                                </div>
+                                <div class="flex-grow pl-3">
+                                    <h6 class="font-bold text-sm uppercase text-gray-600">Madhur Jajodia</h6>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <p class="text-sm leading-tight"><span
+                                        class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>
+                                    I really cant tell you how happy I am with the way the resume turned out. I used to
+                                    look at my resume and think 'nobody would hire me' and now I'm super confident
+                                    applying to jobs with this updated version!<span
+                                        class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                            <div class="w-full flex mb-4 items-center">
+                                <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                                    <img src="assets/img/testimonial/I210.jpg" alt="">
+                                </div>
+                                <div class="flex-grow pl-3">
+                                    <h6 class="font-bold text-sm uppercase text-gray-600">Eshanya Walia</h6>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <p class="text-sm leading-tight"><span
+                                        class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Wanted
+                                    to let you know I got an outrageously awesome job offer! Thank you so much.<span
+                                        class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 md:w-1/3">
+                        <div
+                            class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                            <div class="w-full flex mb-4 items-center">
+                                <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                                    <img src="assets/img/testimonial/N292.jpg" alt="">
+                                </div>
+                                <div class="flex-grow pl-3">
+                                    <h6 class="font-bold text-sm uppercase text-gray-600">Ronak Porwal</h6>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <p class="text-sm leading-tight"><span
+                                        class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span> I feel
+                                    confident this new resume is going to be a major game changer for me in my job
+                                    pursuit. Thank you so very much!<span
+                                        class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                            <div class="w-full flex mb-4 items-center">
+                                <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                                    <img src="assets/img/testimonial/N309.jpg" alt="">
+                                </div>
+                                <div class="flex-grow pl-3">
+                                    <h6 class="font-bold text-sm uppercase text-gray-600">Chinmay Mulay</h6>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <p class="text-sm leading-tight"><span
+                                        class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>
+                                    simply amazing! <span
+                                        class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 md:w-1/3">
+                        <div
+                            class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                            <div class="w-full flex mb-4 items-center">
+                                <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                                    <img src="assets/img/testimonial/N275.jpg" alt="">
+                                </div>
+                                <div class="flex-grow pl-3">
+                                    <h6 class="font-bold text-sm uppercase text-gray-600">Prateek Tekriwal</h6>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <p class="text-sm leading-tight"><span
+                                        class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Just a
+                                    quick note to say THANK YOU!!!! I applied to 8 positions and got interviews at every
+                                    one of them. I was offered jobs at 4. I accepted my dream job with a pay increase
+                                    over my previous job. Everyone loved my resume and cover letter. You ROCK<span
+                                        class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                            <div class="w-full flex mb-4 items-center">
+                                <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                                    <img src="assets/img/testimonial/B220.jpeg" alt="">
+                                </div>
+                                <div class="flex-grow pl-3">
+                                    <h6 class="font-bold text-sm uppercase text-gray-600">Joel Thomas</h6>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <p class="text-sm leading-tight"><span
+                                        class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>I feel
+                                    confident this new resume is going to be a major game changer for me in my job
+                                    pursuit. Thank you so very much!<span
+                                        class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative pt-8 pb-6">
+        <div class="flex flex-wrap items-center md:justify-between justify-center">
+            <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+                <div class="text-sm text-gray-600 font-semibold py-1">
+                    Copyright © <span>2023</span>
+                    <a href="#top" class="text-blueGray-500 hover:text-gray-800">Paper Resume</a>
+                    <a href="https://www.linkedin.com/in/madhur-jajodia-81269b202/" class="text-blueGray-500 hover:text-gray-800"
+                        target="_blank"> | Madhur Jajodia </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
