@@ -1,0 +1,21 @@
+/* Universal */
+@font-face {
+  font-family: Google Sans;
+  src: url(assets/font/font.ttf);
+}
+
+* {
+  font-family: Google Sans;
+  scroll-behavior: smooth;
+}
+
+/* Error 404 */
+.error-text {
+  font-size: 130px;
+}
+
+@media (min-width: 768px) {
+  .error-text {
+    font-size: 220px;
+  }
+}
